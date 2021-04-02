@@ -1,4 +1,6 @@
-/* info.js - 1 **************************************************************
+/* 
+
+info.js - 1 ****************
 
 Créer un object literal alice qui contiendra les informations suivantes:
 
@@ -16,13 +18,13 @@ firstName: 'Charlie'
 lastName: 'Charlot'
 age: 8
 
-info.js - 2 **************************************************************
+info.js - 2 ******************
 
 Améliorer le programme précédent en ajoutant les fonctionnalités ci dessous.
 Créer une fonction printInfo qui prendra un objet en paramètre et qui affichera
 sur la console les informations concernant alice, bob ou charlie
 
-info.js - 3 **************************************************************
+info.js - 3 *****************
 
 Améliorer le programme précédent en ajoutant les fonctionnalités ci dessous.
 Créer une fonction canVote qui prendra un objet en paramètre et qui retourne
@@ -30,7 +32,7 @@ true si la personne peut voter ou false sinon.
 Par exemple canVote(alice) retournera true et canVote(charlie) retournera false.
 La majorité est à 18 ans.
 
-info.js - 4 **************************************************************
+info.js - 4 ***************
 
 Améliorer le programme précédent en ajoutant les fonctionnalités ci dessous.
 Faites preuve d'imagination et ajouter à chacun des objets
@@ -38,7 +40,7 @@ une propriété language qui sera un tableau de string qui contiendra
 la liste de tous les langages de programmation que
 Alice, Bob et Charlie connaissent.
 
-info.js - 5 **************************************************************
+info.js - 5 ****************
 
 Améliorer le programme précédent en ajoutant les fonctionnalités ci dessous.
 Ecrivez une fonction mostSkilledDev qui prendra comme paramètre 2 objets,
@@ -47,6 +49,9 @@ connait le plus de langages de programmation.
 En cas d'égalité draw sera retourné.
 
 */
+
+/*********************************************** INFOS **********************************************************/
+
 const chalk = require("chalk");
 
 // object literals : alice, bob, charlie
@@ -88,7 +93,7 @@ const canVote = (person) => {
 };
 
 /*
-VERSION ATTENDUE
+OR
 const canVote = (person) => {
   return person.age >= 18 ? true : false;
 };
@@ -104,6 +109,8 @@ const mostSkilledDev = (person1, person2) => {
     return `draw`;
   }
 };
+
+/*********************************************** TESTS **********************************************************/
 
 console.log(chalk.red("--------------------------"));
 
